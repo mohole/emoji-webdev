@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>😎 Web dev & Emojis 😎</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>😎 Web dev & Emojis 😎</h1>
+    </header>
+
+    <p>Puoi usare una qualunque emoji nel codice HTML senza alcun problema, per esempio:</p>
+
+<pre><code>&lt;button&gt;👋&lt;/button&gt;</code></pre>
+
+    <p>Ti permette di creare questo</p>
+
+    <button>👋</button>
+    <hr>
+
+    <p>che ovviamente può anche essere stilato</p>
+    <button class="custom">👋</button>
+
+    <hr>
+
+    <p>Possono essere usate anche in Javascript a patto che siano all'interno di una stringa</p>
+
+<pre><code>const message = '👍';
+document.querySelector('button').innerHTML = message;
+</code></pre>
+    
+    <button class="btn btn-secondary">Cliccami!</button>
+
+  </main>
+
+<script>
+
+const message = 'Fatto 👍';
+const button = document.querySelector('button.btn.btn-secondary');
+
+button.addEventListener('click', () => {
+  button.innerHTML = message;
+  button.disabled = true;
+});
+
+</script>
+</body>
+</html>
